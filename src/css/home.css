@@ -1,0 +1,14 @@
+fa-microphone-local{
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+.col-8
+{
+    border-left: 0.5px solid grey;
+    border-right: 0.5px solid grey;
+}
+
+.row{
+    margin-top: 15px;
+}
