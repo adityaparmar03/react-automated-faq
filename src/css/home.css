@@ -1,14 +1,110 @@
-fa-microphone-local{
-    line-height: 30px;
-    text-align: center;
-    margin-left: 10px;
+.title{
+
 }
-.col-8
-{
-    border-left: 0.5px solid grey;
-    border-right: 0.5px solid grey;
+.section1{
+    margin-top: 10vh;
+    width: 100%;
+}
+.section3{
+    display: flex;
+    align-items: right;
+}
+.fa-microphone{
+    cursor: pointer;
+    border-left: "1px solid black"
+}
+.fa-microphone:hover{
+    color: blue
+}
+.input-group-text{
+    background-color: white;
+    border-left: "1px solid black"
+}
+.buttonContainer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px
+
+}
+.btnSearch{
+    width:150px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #59698d;
+    border: 0;
+    color: white;
+    border-radius: 5px
+   
+}
+.btnSearch:active{
+    background-color: #45526e;
+    color: whitesmoke;
+}
+.btnPost{
+    width:150px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #1565c0;
+    border: 0;
+    color: white;
+    border-radius: 5px
+
+    
 }
 
-.row{
-    margin-top: 15px;
+.btnPost:active{
+    background-color: #0d47a1;
+    color: whitesmoke;
+}
+
+
+.chatbot {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border: 0px solid #f1f1f1;
+    z-index: 9;
+
+  }
+  
+  .chatBuuble {
+   
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-weight: 400;
+    z-index: 9;
+  }
+.closeButton{
+  
+    z-index: 20;
+    cursor: pointer;
+    text-align: right;
+    color:black;
+    font-size: 24px;
+
+}
+.miniLoading{
+    z-index:20000;
+    display:flex;
+    position:fixed;
+    top:50vh;
+    left:50vw;
+    border-radius:50%;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(255,255,255,0.6);
+    width:80px;
+    height:80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    
 }
