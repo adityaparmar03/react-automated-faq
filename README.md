@@ -1,1 +1,10 @@
-# Automated-Customer-Support---React
+# React Automated FAQs
+
+
+
+#### Install
+  
+  ```
+      npm i react-automated-faq
+   
+  ```
