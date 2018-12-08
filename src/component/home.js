@@ -22,8 +22,8 @@ class Home extends Component {
                 this.state = {
                 chatbox:false,  
                 start:false,
-                apiKey:"sjsu",
-                top:10,
+                apiKey:this.props.apiKey,
+                top:this.props.top,
                 qna:[],
                 question:"",
                 on:false    

@@ -1,25 +1,36 @@
 {
-  "name": "customersupport",
-  "version": "1.0.0",
+  "name": "react-automated-faq",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adityaparmar03/Automated-Customer-Support---React.git"
+    "url": "git+https://github.com/adityaparmar03/react-automated-faq.git"
   },
-  "author": "",
+  "peerDependencies": {
+    "react": "^16.4.0"
+  },
+  "author": {
+    "name": "Aditya Parmar",
+    "email": "parmar415@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adityaparmar03/Automated-Customer-Support---React/issues"
+    "url": "https://github.com/adityaparmar03/react-automated-faq/issues"
   },
-  "homepage": "https://github.com/adityaparmar03/Automated-Customer-Support---React#readme",
+  "homepage": "https://github.com/adityaparmar03/react-automated-faq#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
@@ -29,10 +40,12 @@
     "react-dom": "^16.5.1",
     "style-loader": "^0.23.0",
     "webpack": "^4.19.0",
-    "webpack-cli": "^3.1.0",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "react": "^16.4.0",
+    "webpack": "^4.12.0",
     "axios": "^0.18.0",
     "cors": "^2.8.5",
     "dom": "0.0.3",
